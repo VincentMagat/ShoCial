@@ -1,0 +1,67 @@
+/* style landing page */
+.landingBG {
+    /* background styles here */
+    background-color: White;
+    /* ... other background styles ... */
+    background-image: url('/images/Background.jpg');
+        background-repeat: no-repeat; /* Set to "repeat" for tiling */
+        background-size: cover; /* Adjust as needed (cover, contain, etc.) */
+        background-position: top; /* Adjust as needed (center, top, bottom, etc.) */
+
+}
+
+.loginButton{
+    position: absolute;
+    font-weight: Bolder;
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-bottom: 8px;
+    padding-top: 8px;
+    top: 48%;
+    left: 25.5%;
+    border-radius: 20px;
+    background-color: rgba(178, 200, 237, 0.5);
+    font-color: White;
+    cursor: pointer;
+}
+
+.nameLogo{
+    position: absolute;
+    font-size: 40px;
+    margin-left: 80px;
+}
+
+.usernameBox{
+    background-color: #edede6;
+    position:absolute;
+    padding-right: 50px;
+    padding-bottom: 5%;
+    left: 17.5%;
+    top: 23%;
+
+
+}
+
+.passwordBox{
+    background-color: #edede6;
+    position:absolute;
+    padding-right: 50px;
+    padding-bottom: 5%;
+    left: 17.5%;
+    top: 35%;
+
+
+}
+
+.empty-box {
+    /* Box styles */
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.3);
+    width: 350px;
+    height: 450px;
+    border: 1.5px solid black;
+     left: 60%;
+     transform: translateX(-50%);
+     top: 30%;
+     transform: translateY(-30%);
+}
