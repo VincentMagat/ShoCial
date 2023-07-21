@@ -1,67 +1,59 @@
 /* style landing page */
-.landingBG {
-    /* background styles here */
-    background-color: White;
-    /* ... other background styles ... */
-    background-image: url('/images/Background.jpg');
-        background-repeat: no-repeat; /* Set to "repeat" for tiling */
-        background-size: cover; /* Adjust as needed (cover, contain, etc.) */
-        background-position: top; /* Adjust as needed (center, top, bottom, etc.) */
 
+
+.page-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Set the page-container height to fill the entire viewport */
 }
-
-.loginButton{
-    position: absolute;
-    font-weight: Bolder;
-    padding-left: 60px;
-    padding-right: 60px;
-    padding-bottom: 8px;
-    padding-top: 8px;
-    top: 48%;
-    left: 25.5%;
-    border-radius: 20px;
-    background-color: rgba(178, 200, 237, 0.5);
-    font-color: White;
-    cursor: pointer;
-}
-
-.nameLogo{
-    position: absolute;
-    font-size: 40px;
-    margin-left: 80px;
-}
-
 .usernameBox{
-    background-color: #edede6;
-    position:absolute;
-    padding-right: 50px;
-    padding-bottom: 5%;
-    left: 17.5%;
-    top: 23%;
+    margin-top: 25%;
+    margin-left: 2.5%;
+    font-size: 16px;
+    padding-top: 2.5%;
 
 
 }
-
+.usernameBox::placeholder{
+    font-size: 16px;
+}
 .passwordBox{
-    background-color: #edede6;
-    position:absolute;
-    padding-right: 50px;
-    padding-bottom: 5%;
-    left: 17.5%;
-    top: 35%;
-
-
+    margin-top: 2.5%;
+    margin-left: 2.5%;
+    font-size: 16px;
+    padding-top: 2.5%;
+}
+.passwordBox{
+    font-size: 16px;
 }
 
 .empty-box {
-    /* Box styles */
-    position: absolute;
-    background-color: rgba(255, 255, 255, 0.3);
-    width: 350px;
-    height: 450px;
-    border: 1.5px solid black;
-     left: 60%;
-     transform: translateX(-50%);
-     top: 30%;
-     transform: translateY(-30%);
+    width: 50%;
+    max-width: 350px; /* Adjust the maximum width as needed */
+    min-width: 350px;
+    height: 400px; /* Adjust the height as needed */
+    margin: 0 auto; /* Center the box horizontally */
+    background-color: #f2f2f2; /* Replace with your preferred background color */
+    border: 2px solid #333; /* Border properties: 2px width, solid style, and color #333 (dark gray) */
+    border-radius: 10px; /* Rounded corners: Adjust the value as needed for a different level of rounding */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+  }
+  .boxLogo{
+    font-size: 25px;
+    margin: 0 auto;
+    margin-top: -35%;
+  }
+  .loginButton{
+    font-size: 16px;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 32%;
+    cursor: pointer;
+    background-color: rgba(106,149,247,0.8);
+    font-weight: bolder;
+  }
 }
