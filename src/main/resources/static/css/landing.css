@@ -56,3 +56,10 @@
     background-color: rgba(106,149,247,0.8);
     font-weight: bolder;
   }
+  .signup{
+    margin-top: 15%;
+  }
+  .line{
+    border-top: 1px solid black;
+    margin: 50px 0;
+  }
