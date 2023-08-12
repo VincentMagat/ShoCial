@@ -6,10 +6,12 @@
   <link rel="stylesheet" type="text/css" th:href="@{/css/landing.css}">
 </head>
 <body>
+<!-- Start of form -->
+<form method="post" action="/" th:object="${loginRequest}" class="login-form">
         <div class="page-container">
             <div class="empty-box">
-                <input class="usernameBox" type="text" placeholder="username">
-                <input class="passwordBox" type="text" placeholder="password">
+                <input class="usernameBox" name="username" type="text" placeholder="username">
+                <input class="passwordBox" name="password" type="password" placeholder="password">
                 <p class="boxLogo">𝓢𝓱𝓸𝓒𝓲𝓪𝓵</p>
                 <button class="loginButton" type="submit">Log in</button>
                 <div class="line">
@@ -17,5 +19,7 @@
                 </div>
             </div>
         </div>
+</form>
+<!-- End of form -->
 </body>
 </html>

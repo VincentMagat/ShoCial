@@ -15,15 +15,20 @@ public class UserService {
     }
 
     public UserModel registerUser(String username, String password, String email) {
-        // TODO: Vincent: There's a better way to re-write this logic. Try mo lang
-        if(username != null && password != null) {
+
+        if(username == null && password == null) {
+            return null;
+        } else {
+            if(userRepository.findFirstByUsername(username).isPresent()) {
+                System.out.println("Duplicate Login");
+                return null;
+            }
+
             UserModel userModel = new UserModel();
             userModel.setUsername(username);
             userModel.setPassword(password);
             userModel.setEmail(email);
             return userRepository.save(userModel);
-        } else {
-            return null;
         }
     }
 

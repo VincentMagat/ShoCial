@@ -7,16 +7,18 @@
 </head>
 <body>
     <div class="page-container">
-        <div class="empty-box">
-            <input class="usernameBox" type="text" placeholder="username">
-            <input class="passwordBox" type="text" placeholder="password">
-            <input class="verify-passwordBox" type="text" placeholder="verify password">
-            <input class="email" type="text" placeholder="Enter E-mail">
-            <p class="boxLogo">Sign Up</p>
-            <button class="signupButton" type="submit">Sign Up</button>
-
-        </div>
-
+        <!-- Start of form -->
+        <form method="post" action="/signup" th:object="${registerRequest}" class="register-form">
+            <div class="empty-box">
+                <input class="usernameBox" name="username" type="text" placeholder="username">
+                <input class="passwordBox" name="password" type="password" placeholder="password">
+                <input class="verify-passwordBox" type="password" placeholder="verify password">
+                <input class="email" name="email" type="text" placeholder="Enter E-mail">
+                    <p class="boxLogo">Sign Up</p>
+                <button class="signupButton" type="submit">Sign Up</button>
+            </div>
+        </form>
+        <!-- End of form -->
     </div>
 
 
